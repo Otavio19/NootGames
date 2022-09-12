@@ -1,0 +1,212 @@
+.aboutContent
+{
+    height: 200vh;
+    padding-top: 12rem;
+}
+
+.container
+{
+    height: 38.56rem;
+    width: 65.87rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 2rem 2rem;
+    background-color: #fff;
+}
+
+.firstBox, .secondBox
+{
+    width: 40%;
+    height: 80%;
+}
+
+.firstBox
+{
+    padding: 5rem 5rem;
+}
+
+.firstTitle
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #033434;
+}
+
+.subTitle
+{
+    font-size: 1.12rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #457F7E;
+}
+
+.secondBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card
+{
+    width: 11.43rem;
+    height: 7.62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.62rem;
+    background-color: #DDE8EA;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover
+{
+    transform: scale(1.2rem);
+    box-shadow: 0.4rem 0.5rem 1rem 0.1rem #696969;
+}
+
+.secondContainer
+{
+    height: 80vh;
+    margin:  10rem auto;
+    width: 55rem;
+}
+
+.secondTitle
+{
+    font-size: 3.12rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #00DD7D;
+}
+
+.secondSubtitle
+{
+    width: 536px;
+    margin: 1rem auto;
+    font-size: 1.12rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #76B1BC;
+}
+
+.cardBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    cursor: default;
+}
+
+.secondCard
+{
+    border: 1px solid #00DC7D;
+    width: 20.63rem;
+    height: 9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secondCard:nth-child(1), .secondCard:nth-child(5)
+{
+    border-radius: 0 1rem 1rem;
+}
+
+.secondCard:nth-child(2), .secondCard:nth-child(6)
+{
+    border-radius: 1rem 0rem 1rem 1rem;
+}
+
+.secondCard:nth-child(3)
+{
+    border-radius: 1rem 1rem 1rem 0;
+}
+
+.secondCard:nth-child(4)
+{
+    border-radius: 1rem 1rem 0 1rem;
+}
+
+.textCard
+{
+    width: 12rem;
+    color: #fff;
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width:412px)
+{
+    .aboutContent
+    {
+        margin: 0;
+    }
+
+    .container
+    {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        justify-content: initial;
+        position: static;
+        height: auto;
+        border-radius: 0;
+        margin: auto;
+    }
+
+    .firstBox
+    {
+        width: 100%;
+        padding: 5rem 1rem;
+    }
+
+    .card
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card:nth-child(6)
+    {
+        border-radius: 1.25rem 1.25rem 1.5rem 1.5rem;
+    }
+
+    .secondBox
+    {
+        width: 100%;
+        gap: 0.5rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .secondContainer
+    {
+        width: 100%;   
+    }
+
+    .secondSubtitle
+    {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .cardBox
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+}

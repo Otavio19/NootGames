@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    background: #003434 url( './assets/bg-ladingpage.png');
+    background-size: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 412px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        max-width: 100%;
+    }
+}

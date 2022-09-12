@@ -1,0 +1,114 @@
+.container
+{
+    height: 100vh;
+    position: relative;
+    top: 60vh;
+}
+
+.firstBox, .secondBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+}
+
+.firstDivision
+{
+    width: 30rem;
+    padding-right: 5rem;
+    height: 19rem;
+}
+
+.firstDivision:nth-child(2)
+{
+    padding-left: 5rem;
+    padding-right: 0;
+}
+
+.titleClient
+{
+    font-size: 3.12rem;
+    color: #00DD7D;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.textClient
+{
+    font-size: 1.12rem;
+    color: #76B1BC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondDivision
+{
+}
+
+.frameBox
+{
+    position: relative;
+    left: 1rem;
+}
+
+.frameBox img
+{
+    width: 10rem;
+    position: relative;
+    transition: 0.3s;
+    top: 1rem;
+    left: -1rem;
+}
+
+.frameBox img:hover
+{
+    transform: scale(1.1);
+}
+
+.frame
+{
+    width: 7rem;
+    height: 7rem;
+    background: #00DC7D;
+    position: absolute;
+    top: 2rem;
+    border-radius: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.secondDivision .bgMinecraft
+{
+    width: 25rem;
+    position: relative;
+    top: -2.5rem;
+    z-index: -1;
+}
+
+.secondDivision
+{
+    position: relative;
+}
+
+.bgGta
+{
+    width: 25rem;
+    position: relative;
+}
+
+.frameGta
+{
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #00DD7D;
+    top: 16.5rem;
+    right: 0;
+    position: absolute;
+    border-radius: 1.25rem 1.25rem 0 1.25rem;
+}
+
+@media (max-width: 412px)
+{
+    .container
+    {
+        display: none;
+    }
+}

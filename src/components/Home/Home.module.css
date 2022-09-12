@@ -1,0 +1,210 @@
+.container
+{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.fristBox, .secondBox, .thirdBox
+{
+    position: relative;
+    width: 30%;
+    height: 100vh;
+}
+
+.boxImg
+{
+    width: 33.37rem;
+    position: absolute;
+    top: 7.87rem;
+}
+
+.boxImg3
+{
+    position: absolute;
+    top: 33.25rem;
+    left: 12rem;
+}
+
+.monkeyImg
+{
+    z-index: 2;
+}
+
+.monkeyImg:hover + .frame .reflex
+{
+    animation: down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.frame
+{
+    border: 1px solid #00DD7D;
+    width: 11.56rem;
+    height: 9.3rem;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    border-radius: 1rem 1rem 0rem 1rem;
+    overflow: hidden;
+}
+
+.reflex
+{
+    width: 150%;
+    height: 3rem;
+    background-color: #00DD7D;
+    position: absolute;
+    transform: rotate(25deg);
+    left: -25%;
+    transition: 0.5s;
+    top: -100%;
+}
+
+@keyframes down
+{
+    0%{
+        top: -100%;
+    }
+
+    100%
+    {
+        top: 150%;
+    }
+}
+
+.boxImg3 img
+{
+    width: 16.12rem;
+    position: absolute;
+}
+
+/* Segunda Grid */
+.secondBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.title
+{
+    font-family: fantasy;
+    font-size: 3.12rem;
+    text-align: center;
+    color: #00DD7D;
+}
+
+.subtitle
+{
+    font-size: 1.12rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #76B1BC;
+    margin-top: 1rem;
+}
+
+.btnHome
+{
+    width: 12.81rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border-radius: 1.25rem;
+    margin-top: 2rem;
+    color: #033434;
+    border: none;
+    background: #50ECE9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnHome:hover
+{
+    transform: translateX(-0.4rem) translateY(-0.4rem);
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+
+/* Terceira Grid */
+
+.boxImgs
+{
+    position: relative;
+    top: 5rem;
+    left: 7.8rem;
+    z-index: 1;
+}
+
+.frameSteve
+{
+    background-color: #00DD7D;
+    width: 11.56rem;
+    height: 9.3rem;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    border-radius: 0rem 1rem 1rem 1rem;
+    overflow: hidden;
+}
+
+.boxImgs img
+{
+    position: absolute;
+    width: 9.62rem;
+    top: 4rem;
+    left: 1rem;
+}
+
+.imgSteveCorrendo
+{
+    width: 33.93rem;
+    position: relative;
+    top: 15rem;
+}
+
+@media (max-width: 412px) {
+
+    .container
+    {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .fristBox
+    {
+        position: absolute;
+        width: 100%;
+    }
+
+    .secondBox
+    {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        padding: 10rem 2rem 0;
+        text-align: center;
+    }
+    
+    .thirdBox
+    {
+        display: none;
+    }
+
+    .boxImg
+    {
+        width: 22rem;
+        position: absolute;
+        top: 5.5rem;
+        left: 2rem;
+    }
+
+    .boxImg3
+    {
+        left: 6rem;
+        top: 35rem;
+    }
+}

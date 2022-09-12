@@ -1,0 +1,99 @@
+.container
+{
+    height: 40vh;
+    position: relative;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #033434;
+}
+
+.box
+{
+    width: 45%;
+    height: 90%;
+    position: relative;
+}
+
+.fistBg
+{
+    width: 50%;
+    height: 15rem;
+    display: inline-block;
+    background: #00DD7D;
+    border-radius: 1.5rem 0 0 1.5rem;
+    color: #033434;
+    position: relative;
+    font-size: 2.5rem;
+    padding: 2rem 12rem 2rem 2rem;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.secondBg
+{
+    width: 50%;
+    height: 15rem;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0 1.5rem 1.5rem 0;
+    position: relative;
+    right: 0;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    color: #00DD7D;
+}
+
+.homem
+{
+    display: inline-block;
+    position: absolute;
+    left: 20rem;
+    top: -6.1rem;
+}
+
+.homem img
+{
+    width: 30rem;
+}
+
+hr
+{
+    border-color: #00DD7D;
+    margin-top: 4rem;
+}
+
+.box p
+{
+    margin-top: 1rem;
+    color: #325959;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1020px)
+{
+    .homem
+        {
+            left: 15rem;
+        }
+}
+
+@media (max-width: 412px)
+{
+    .fistBg, .secondBg, .homem
+    {
+        display: none;
+    }
+
+    .container
+    {
+        margin-top: 35rem;
+        height: 10rem;
+    }
+
+    .box
+    {
+        width: 95%;
+    }
+}
